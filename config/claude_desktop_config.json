@@ -1,0 +1,100 @@
+{
+  "mcpServers": {
+    "memory": {
+      "command": "node",
+      "args": [
+        "<NPM_MODULES_PATH>/@modelcontextprotocol/server-memory/dist/index.js"
+      ],
+      "env": {
+        "MEMORY_FILE_PATH": "<HOME>/Documents/Claude-Memory/memory.jsonl"
+      }
+    },
+    "filesystem": {
+      "command": "node",
+      "args": [
+        "<NPM_MODULES_PATH>/@modelcontextprotocol/server-filesystem/dist/index.js",
+        "<HOME>/Documents"
+      ]
+    },
+    "github": {
+      "command": "node",
+      "args": [
+        "<NPM_MODULES_PATH>/@modelcontextprotocol/server-github/dist/index.js"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "<GITHUB_TOKEN>"
+      }
+    },
+    "playwright": {
+      "command": "node",
+      "args": [
+        "<NPM_MODULES_PATH>/@playwright/mcp/cli.js"
+      ]
+    },
+    "firecrawl": {
+      "command": "node",
+      "args": [
+        "<NPM_MODULES_PATH>/firecrawl-mcp/dist/index.js"
+      ],
+      "env": {
+        "FIRECRAWL_API_KEY": "<FIRECRAWL_API_KEY>"
+      }
+    },
+    "security-audit": {
+      "command": "node",
+      "args": [
+        "<NPM_MODULES_PATH>/mcp-security-audit/build/index.js"
+      ]
+    },
+    "semgrep": {
+      "command": "node",
+      "args": [
+        "<NPM_MODULES_PATH>/mcp-server-semgrep/build/index.js"
+      ],
+      "env": {
+        "PATH": "<PYTHON_SCRIPTS_PATH>;<PYTHON_PATH>;<SYSTEM_PATH>"
+      }
+    },
+    "desktop-commander": {
+      "command": "node",
+      "args": [
+        "<NPM_MODULES_PATH>/@wonderwhy-er/desktop-commander/dist/index.js"
+      ]
+    },
+    "shadcn-ui": {
+      "command": "node",
+      "args": [
+        "<NPM_MODULES_PATH>/@jpisnice/shadcn-ui-mcp-server/build/index.js",
+        "--github-api-key",
+        "<GITHUB_TOKEN>"
+      ]
+    },
+    "magicuidesign-mcp": {
+      "command": "node",
+      "args": [
+        "<NPM_MODULES_PATH>/@magicuidesign/mcp/dist/server.js"
+      ]
+    },
+    "21st-dev-magic": {
+      "command": "node",
+      "args": [
+        "<NPM_MODULES_PATH>/@21st-dev/magic/dist/index.js",
+        "API_KEY=<21ST_DEV_API_KEY>"
+      ]
+    },
+    "obsidian": {
+      "command": "node",
+      "args": [
+        "<NPM_MODULES_PATH>/mcp-obsidian/dist/index.js",
+        "<OBSIDIAN_VAULT_PATH>"
+      ]
+    },
+    "gitnexus": {
+      "command": "node",
+      "args": [
+        "<NPM_MODULES_PATH>/gitnexus/dist/cli/index.js",
+        "mcp"
+      ]
+    }
+  }
+}

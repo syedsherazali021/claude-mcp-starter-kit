@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "additionalDirectories": [
+      "<OBSIDIAN_VAULT_PATH>",
+      "<HOME>/Documents/Claude-Chats",
+      "<HOME>/Documents/Claude-Memory",
+      "<HOME>/Documents"
+    ]
+  }
+}
