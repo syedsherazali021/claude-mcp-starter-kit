@@ -108,6 +108,7 @@ The script will:
 - [MCP Server Details](docs/MCP_DETAILS.md) — Every MCP explained with examples
 - [Slash Commands Guide](docs/COMMANDS.md) — Every command with usage examples
 - [Web Connectors Guide](docs/CONNECTORS.md) — Setting up cloud connectors
+- [Use Cases](docs/USE_CASES.md) — Real workflows and what you can build
 - [Troubleshooting](docs/TROUBLESHOOTING.md) — Common issues and fixes
 
 ---
